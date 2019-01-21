@@ -11,19 +11,19 @@ This is a template that I am slowly refining to modernize my development environ
 # Windows 10 Home
 - Docker : https://github.com/mstraughan86/docker-for-windows10home
 - Powershell : https://github.com/powershell/powershell#get-powershell
-- Chocolatey : (powershell as admin) 
+- Chocolatey : ```(powershell as admin)```
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
-- Make : (powershell as admin) 
+- Make : ```(powershell as admin)```
 ```
 choco install make -y
 ```
-- Firefox : (powershell as admin) 
+- Firefox : ```(powershell as admin)```
 ```
 choco install firefox -y
 ```
-- VSCode : (powershell as admin) 
+- VSCode : ```(powershell as admin)```
 ```
 choco install vscode -y
 ```
