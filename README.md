@@ -1,1 +1,42 @@
-# modern-development-setup
+# Modern Development Setup
+This is a template that I am slowly refining to modernize my development environment. This is also the template I will be using to teach from and therefore I require it to accomodate the various operating systems that my students will be using.
+
+## OS Agnostic Toolbench
+- Docker
+- Powershell
+- Make
+- Firefox
+- VSCode
+
+# Windows 10 Home
+- Docker : https://github.com/mstraughan86/docker-for-windows10home
+- Powershell : https://github.com/powershell/powershell#get-powershell
+- Chocolatey : (powershell as admin) ```Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))```
+- Make : (powershell as admin) ```choco install make -y```
+- Firefox : (powershell as admin) ```choco install firefox -y````
+- VSCode : (powershell as admin) ```choco install vscode -y```
+
+# Ubuntu 18.04
+- Docker : 
+```
+sudo apt update
+sudo apt upgrade
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt update
+sudo systemctl status docker
+docker -v
+sudo usermod -aG docker $USER
+```
+- Powershell : https://github.com/powershell/powershell#get-powershell
+- Make : ```sudo apt install build-essential -y```
+- Firefox : ```sudo apt install firefox -y```
+- VSCode :
+```
+sudo apt update
+sudo apt install software-properties-common apt-transport-https wget
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt install code
+```
