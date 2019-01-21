@@ -11,10 +11,22 @@ This is a template that I am slowly refining to modernize my development environ
 # Windows 10 Home
 - Docker : https://github.com/mstraughan86/docker-for-windows10home
 - Powershell : https://github.com/powershell/powershell#get-powershell
-- Chocolatey : (powershell as admin) ```Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))```
-- Make : (powershell as admin) ```choco install make -y```
-- Firefox : (powershell as admin) ```choco install firefox -y````
-- VSCode : (powershell as admin) ```choco install vscode -y```
+- Chocolatey : (powershell as admin) 
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+```
+- Make : (powershell as admin) 
+```
+choco install make -y
+```
+- Firefox : (powershell as admin) 
+```
+choco install firefox -y
+```
+- VSCode : (powershell as admin) 
+```
+choco install vscode -y
+```
 
 # Ubuntu 18.04
 - Docker : 
@@ -30,8 +42,14 @@ docker -v
 sudo usermod -aG docker $USER
 ```
 - Powershell : https://github.com/powershell/powershell#get-powershell
-- Make : ```sudo apt install build-essential -y```
-- Firefox : ```sudo apt install firefox -y```
+- Make : 
+```
+sudo apt install build-essential -y
+```
+- Firefox : 
+```
+sudo apt install firefox -y
+```
 - VSCode :
 ```
 sudo apt update
