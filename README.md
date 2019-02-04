@@ -24,6 +24,10 @@ choco install make -y
 - Firefox : ```(powershell as admin)```
 ```
 choco install firefox -y
+[Environment]::SetEnvironmentVariable(
+    "Path",
+    [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::Machine) + ";C:\Program Files\Mozilla Firefox",
+    [EnvironmentVariableTarget]::Machine)
 ```
 - ngrok : ```(powershell as admin)```
 ```
