@@ -10,24 +10,17 @@ This is a template that I am slowly refining to modernize my development environ
 - VSCode
 - Terminal Manager
 
-# Windows 10 Home
-
-- Docker : https://github.com/mstraughan86/docker-for-windows10home
+# Windows 10
 - Powershell : https://github.com/powershell/powershell#get-powershell
-
-- Windows Subsystem for Linux : ```(powershell as admin)```
-```
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-```
+- Windows Subsystem for Linux : ```(powershell as admin)``` ```Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux```
 - WSL: Ubuntu : https://www.microsoft.com/store/p/ubuntu/9nblggh4msv6
-- Chocolatey : 
+- Chocolatey : ```(powershell as admin)```
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
-- Make : ```(powershell as admin)```
-```
-choco install make -y
-```
+- Docker, Windows 10 Home: ```https://github.com/mstraughan86/docker-for-windows10home```
+- Docker, Windows 10 Pro/Enterprise: ```(powershell as admin)``` ```choco install docker-for-windows -y```
+- Make : ```(powershell as admin)``` ```choco install make -y```
 - Firefox : ```(powershell as admin)```
 ```
 choco install firefox -y
@@ -36,18 +29,9 @@ choco install firefox -y
     [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::Machine) + ";C:\Program Files\Mozilla Firefox",
     [EnvironmentVariableTarget]::Machine)
 ```
-- ngrok : ```(powershell as admin)```
-```
-choco install ngrok -y
-```
-- VSCode : ```(powershell as admin)```
-```
-choco install vscode -y
-```
-- Cmder : ```(powershell as admin)```
-```
-choco install cmder -y
-```
+- ngrok : ```(powershell as admin)``` ```choco install ngrok -y```
+- VSCode : ```(powershell as admin)``` ```choco install vscode -y```
+- Cmder : ```(powershell as admin)``` ```choco install cmder -y```
 
 # Ubuntu 18.04
 - Docker : 
@@ -63,14 +47,8 @@ docker -v
 sudo usermod -aG docker $USER
 ```
 - Powershell : https://github.com/powershell/powershell#get-powershell
-- Make : 
-```
-sudo apt install build-essential -y
-```
-- Firefox : 
-```
-sudo apt install firefox -y
-```
+- Make : ```sudo apt install build-essential -y```
+- Firefox : ```sudo apt install firefox -y```
 - ngrok :
 ```
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
@@ -86,7 +64,4 @@ wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 sudo apt install code
 ```
-- Guake : 
-```
-sudo apt-get install guake -y
-```
+- Guake : ```sudo apt-get install guake -y```
