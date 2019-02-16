@@ -11,9 +11,16 @@ This is a template that I am slowly refining to modernize my development environ
 - Terminal Manager
 
 # Windows 10 Home
+
 - Docker : https://github.com/mstraughan86/docker-for-windows10home
 - Powershell : https://github.com/powershell/powershell#get-powershell
-- Chocolatey : ```(powershell as admin)```
+
+- Windows Subsystem for Linux : ```(powershell as admin)```
+```
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
+- WSL: Ubuntu : https://www.microsoft.com/store/p/ubuntu/9nblggh4msv6
+- Chocolatey : 
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
