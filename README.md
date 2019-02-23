@@ -26,6 +26,10 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 ```
 choco install docker-for-windows -y
 ```
+- Sudo : ```(powershell as admin)```
+```
+choco install sudo -y
+```
 - Make : ```(powershell as admin)```
 ```
 choco install make -y
